@@ -205,7 +205,6 @@ def sem_net(xyz, points, npoint_sem, num_category, ind_seed, end_points, scope, 
 
         return end_points
 
-
 def pn2_fea_extractor(xyz, points, scope, is_training, bn_decay=None):
     ''' Encode multiple context.
         Input:
@@ -231,7 +230,6 @@ def pn2_fea_extractor(xyz, points, scope, is_training, bn_decay=None):
         new_points = pointnet_fp_module(l0_xyz, l1_xyz, l0_points, l1_points, [64,64,64], is_training, bn_decay, scope='fa_layer3')
 
         return new_points
-
 
 def single_encoding_net(pc, mlp_list, mlp_list2, scope, is_training, bn_decay):
     ''' The encoding network for instance
